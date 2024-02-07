@@ -1,0 +1,65 @@
+/* common */
+body {
+    font-family: 'Protest Riot', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./../images/bgr.jpg");    
+    height: 100vh;
+}
+
+/* main */
+.container {    
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main-title {
+    padding-top: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+}
+
+.btn-wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: left 0.35s ease-in-out, top 0.35s ease-in-out;
+}
+#btn-yes{
+    position: relative;
+    left: -15%;
+    background-color: #ff7231;
+}
+#btn-no {
+    position: absolute;
+    right: 31%;
+    display: flex;
+    background-color: rgb(4, 21, 255);
+    z-index: 1;
+}
+.imgQr{
+    display: none;
+    margin-top: 50px;
+    justify-content: center;
+}

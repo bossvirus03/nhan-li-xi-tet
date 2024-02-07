@@ -58,6 +58,10 @@ body {
     background-color: rgb(4, 21, 255);
     z-index: 1;
 }
+.imgQr img{
+    width: 400px;
+    height: auto;
+}
 .imgQr{
     display: none;
     margin-top: 50px;

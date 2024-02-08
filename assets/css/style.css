@@ -45,15 +45,21 @@ body {
     border-radius: 20px;
     cursor: pointer;
     transition: left 0.35s ease-in-out, top 0.35s ease-in-out;
+    max-width: 600px;
+    max-height: 300px;
 }
 #btn-yes{
-    position: relative;
-    left: -15%;
     background-color: #ff7231;
+}
+#btn-yes:hover{
+    background-color: #ff854cd5;
+
 }
 #btn-no {
     position: absolute;
     right: 31%;
+
+    top: -90%;
     display: flex;
     background-color: rgb(4, 21, 255);
     z-index: 1;
@@ -66,4 +72,10 @@ body {
     display: none;
     margin-top: 50px;
     justify-content: center;
+}
+.thanks{
+    position: absolute;
+    color: #ff1d1d;
+    font-size: 40px;
+    bottom:25px;
 }

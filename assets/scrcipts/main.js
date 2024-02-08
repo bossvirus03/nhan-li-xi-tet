@@ -1,9 +1,9 @@
-var length = 1;
 document.addEventListener("DOMContentLoaded", function () {
   // Lấy phần tử cần hover
   var btnNo = document.getElementById("btn-no");
   var btnYes = document.getElementById("btn-yes");
   var imgQR = document.getElementById("qr");
+  // audio.play();
 
   // bắt sự kiện click
   btnYes.addEventListener("click", function () {
@@ -19,9 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   function moveButtonRandomly(button) {
-    const maxX = window.innerWidth - button.clientWidth;
-    const maxY = window.innerHeight - button.clientHeight;
-
     const newX = Math.floor(Math.random() * 500);
     const newY = Math.floor(Math.random() * 500);
 
@@ -35,5 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       button.offsetWidth + (button.offsetWidth * 40) / 100 + "px";
     button.style.height =
       button.offsetHeight + (button.offsetHeight * 40) / 100 + "px";
+    button.style.fontSize =
+      button.style.fontSize + button.style.fontSize + 30 + "px";
   }
 });
